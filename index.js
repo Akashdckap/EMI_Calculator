@@ -30,7 +30,8 @@ const options = document.querySelector(".options")
 
 
 
-calculate.addEventListener("click", () => {
+calculate.addEventListener("click", (e) => {
+    e.preventDefault()
     if (principalamt.value !== "" && interest.value !== "" && timelimit.value !== "" && options.value == "years") {
         // if(options.value == "years"){
             let yearConventor = (Number(timelimit.value)*12)
