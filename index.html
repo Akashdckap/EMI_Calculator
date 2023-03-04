@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="heading">EMI Calculator</h2>
+        <div class="page">
+            <form action="#">
+                <div class="input">
+                    <label>Amount:</label>
+                    <input class="amount" placeholder="Enter loan amount" type="number">
+                </div>
+                <div class="input">
+                    <label>Interest%</label>
+                    <input class="interest" placeholder="interest%" type="number">
+                </div>
+                <div class="input timelimit">
+                    <label>Loan-Tenure</label>
+                    <input type="number" placeholder="Tenure" class="months years">
+                    <select class="options">
+                        <option value="months">Months</option>
+                        <option value="years">Years</option>
+                    </select>
+                </div>
+                <div class="calculate">
+                    <button class="totalpayable">calculate</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="container2">
+            <div class="result">
+                <label class="center">Monthly-Paying:<li class="month-pay"></li></label>
+
+            </div>
+            <div class="result1">
+                <label class="center">Interest:<li class="month-interest"></li></label>
+
+            </div>
+            <div class="result2">
+                <label class="center">Total-amount:<li class="total-paying"></li></label>
+                <label class="amtInt">(Amount+Interest)</label>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
