@@ -34,28 +34,33 @@ calculate.addEventListener("click", (e) => {
     e.preventDefault()
     if (principalamt.value !== "" && interest.value !== "" && timelimit.value !== "" && options.value == "years") {
         // if(options.value == "years"){
-            let yearConventor = (timelimit.value)*12
-        // console.log(yearConventor);
-        let rateOfInt = interest.value / 1200
-        // console.log(rateOfInt)
-
-        let Numarator = (principalamt.value) * rateOfInt * (1 + rateOfInt) ** (yearConventor)
-        // console.log(Numarator)
-
-        let Demnaminator = (1 + rateOfInt) ** (yearConventor) - 1
-        // console.log(Demnaminator)
-
-        let result =Number(Numarator / Demnaminator)
-        answer.innerText = Math.round(result).toLocaleString()
-        // console.log(result)
+            if(interest.value >0 && interest.value <=20){
+                let yearConventor = (timelimit.value)*12
+                // console.log(yearConventor);
+                let rateOfInt = interest.value / 1200
+                // console.log(rateOfInt)
         
-        let output = result * yearConventor - principalamt.value
-    //    console.log()
-        answer1.innerText = Math.round(output).toLocaleString()
-
-        let output2 =   Number(principalamt.value)+Number(output)
-        answer2.innerText = Math.round(output2).toLocaleString()
-
+                let Numarator = (principalamt.value) * rateOfInt * (1 + rateOfInt) ** (yearConventor)
+                // console.log(Numarator)
+        
+                let Demnaminator = (1 + rateOfInt) ** (yearConventor) - 1
+                // console.log(Demnaminator)
+        
+                let result =Number(Numarator / Demnaminator)
+                answer.innerText = Math.round(result).toLocaleString()
+                // console.log(result)
+                
+                let output = result * yearConventor - principalamt.value
+            //    console.log()
+                answer1.innerText = Math.round(output).toLocaleString()
+        
+                let output2 =   Number(principalamt.value)+Number(output)
+                answer2.innerText = Math.round(output2).toLocaleString()
+        
+            }
+           else{
+            alert("please enter interest amount is 1 to 20")
+           }
 
         // const createli = document.createElement("li")
         // createli.innerText = result
@@ -79,6 +84,7 @@ calculate.addEventListener("click", (e) => {
       
     }
     else if(principalamt.value !== "" && interest.value !== "" && timelimit.value !== "" && options.value == "months"){
+        if(interest.value >0 && interest.value <=20){
         let rateOfInt = Number(interest.value / 1200)
         // console.log(rateOfInt)
 
@@ -116,6 +122,11 @@ calculate.addEventListener("click", (e) => {
         // answer2.append(createli2)
         // timelimit.value = ""
         answer2.innerText = output
+        }
+        else{
+            alert("please enter interest amount is 1 to 20")
+           }
+
         
     }
         
