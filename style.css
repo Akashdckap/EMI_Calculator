@@ -61,7 +61,7 @@ label{
     /* padding-bottom: 50px; */
 }
 .center{
-    margin-left: 90px;
+    margin-left: 80px;
     margin-top: 25px;
     font-size: 20px;
     display: flex;
@@ -99,7 +99,7 @@ label{
     margin-bottom: 2px;
 }
 .amtInt{
-    margin-left:90px;
+    margin-left:95px;
     color: whitesmoke;
 }
 .options{
