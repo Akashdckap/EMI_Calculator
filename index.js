@@ -13,10 +13,16 @@ const answer1 = document.querySelector(".month-interest")
 const answer2 = document.querySelector(".total-paying")
 // console.log(answer2)
 const options = document.querySelector(".options")
+<<<<<<< Updated upstream
 // console.log(options)Number
 //One
 
  
+=======
+// console.log(options)
+
+//two
+>>>>>>> Stashed changes
 
 
 
