@@ -14,6 +14,7 @@ const answer2 = document.querySelector(".total-paying")
 // console.log(answer2)
 const options = document.querySelector(".options")
 // console.log(options)Number
+//One
 
  
 
